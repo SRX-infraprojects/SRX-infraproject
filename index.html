@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet"
+     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+     rel="stylesheet"
+     />
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+         
+         
+        <ul class="navlist">
+            <li><a href="#">Home</a></li>
+            <li><a href="objectives.html">Objectives</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+        
+        
+        <div class="toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        
+        <div class="dropdown_menu ">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Objectives</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="contact.html">Contact us</a></li>            
+        </div>
+    </header>
+
+
+    <main>
+        <section id="hero">
+            <h1>Welcome</h1>
+            <p>Your Vision, Our Commitment</p>
+             
+        </section>
+    </main>
+
+    <script>
+        const togglebtn = document.querySelector('.toggle-btn')
+        const togglebtnicon = document.querySelector('.toggle-btn i')
+        const dropdownmenu = document.querySelector('.dropdown_menu')
+    
+        togglebtn.onclick = function (){
+
+            dropdownmenu.classList.toggle('open')
+            const isOpen =dropdownmenu.classList.contains('open')
+            togglebtnicon.classList = isOpen
+              ? 'fa-solid fa-xmark'
+              : 'fa-solid fa-bars'
+        
+        }
+    </script>
+
+     
+
+         
+    
+
+     
+    
+</body>
+</html>
